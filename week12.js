@@ -1,6 +1,6 @@
 const originalText = document.querySelector('#originalText');
 const processButton = document.querySelector('#processButton');
-const output = document.querySelector('#output');
+
     
 const processText = () => {
     const text = originalText.textContent;
@@ -39,8 +39,6 @@ const processText = () => {
     // 9. Изменение первой буквы в переменной `replacedText` на заглавную
     const modifiedText = replacedText.charAt(0).toUpperCase() + replacedText.slice(1);
     console.log(`9. Строка с измененной первой буквой: ${modifiedText}`);
-
-    
 };
     
 processButton.addEventListener('click', processText);
